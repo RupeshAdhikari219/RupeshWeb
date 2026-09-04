@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color:black;
+}
+
+hr {
+    display: none;
+}
+
+/*   Header & Navigation  */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+h1 {
+    width: 80%;
+    max-width: 800px;
+    min-height: 120px;
+    color: rgb(150, 10, 118);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    background-color: white;
+    margin: 10px auto;
+    padding: 20px;
+    border: 10px double green;
+    border-radius: 20px;
+    /* Converted percentage to px for smooth rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    margin-top: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: rgb(150, 10, 118);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+nav a:hover {
+    background-color: white;
+    color: green;
+}
+
+/*   Main Content Layout & Section Titles   */
+main {
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    border: 2px solid green;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Titles of My class */
+.section-title,
+h2 {
+    color: red;
+    background-color: lightblue;
+    font-size: 28px;
+    padding: 8px 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    border-left: 5px solid rgb(150, 10, 118);
+}
+
+h3 {
+    color: rgb(150, 10, 118);
+    margin: 15px 0 10px 0;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: rgb(150, 10, 118);
+    font-weight: bold;
+}
+
+a:hover {
+    color: green;
+}
+
+
+/*   Images & Figures */
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    border: 3px solid green;
+}
+
+figcaption {
+    font-size: 14px;
+    color: #555555;
+    margin-top: 8px;
+}
+
+/*    Table Styling   */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+}
+
+th,
+td {
+    padding: 10px 12px;
+    text-align: left;
+    border: 1px solid green;
+}
+
+th {
+    background-color: lightblue;
+    color: rgb(150, 10, 118);
+    font-weight: bold;
+}
+
+
+
+/*    Form & Fieldset Styling (contact.html)    */
+fieldset {
+    border: 2px solid green;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fdfdfd;
+}
+
+legend {
+    padding: 0 10px;
+    color: rgb(150, 10, 118);
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: rgb(150, 10, 118);
+    box-shadow: 0 0 5px rgba(150, 10, 118, 0.5);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+    accent-color: green;
+    cursor: pointer;
+}
+
+input[type="radio"]+label,
+input[type="checkbox"]+label {
+    font-weight: normal;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: rgb(150, 10, 118);
+}
+
+button[type="reset"] {
+    background-color: #888888;
+}
+
+button[type="reset"]:hover {
+    background-color: #555555;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-top: 2px solid green;
+    margin-top: 30px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    h1 {
+        width: 95%;
+        font-size: 28px;
+        height: auto;
+    }
+
+    .section-title,
+    h2 {
+        font-size: 22px;
+    }
+}

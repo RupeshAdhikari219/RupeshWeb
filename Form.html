@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact &amp; Feedback Form - Rupesh Adhikari</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Contact &amp; Feedback</h1>
+
+        <nav>
+            <p>
+                <a href="index.html">&larr; Back to Main Website</a>
+            </p>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>Get in Touch</h2>
+            <p>Please fill out the form below to submit your message or feedback.</p>
+
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend><b>Personal Details</b></legend>
+
+                    <p>
+                        <label for="Username">Full Name:</label><br>
+                        <input type="text" id="Username" name="Username" placeholder="Enter your full name" required>
+                    </p>
+
+                    <p>
+                        <label for="Useremail">Email Address:</label><br>
+                        <input type="email" id="Useremail" name="Useremail" placeholder="example@mail.com" required>
+                    </p>
+
+                    <p>
+                        <label for="Userpassword">Password:</label><br>
+                        <input type="password" id="Userpassword" name="Userpassword" placeholder="Enter your password"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="role">Primary Occupation:</label><br>
+                        <select id="role" name="role">
+                            <option value="" disabled selected>-- Select an option --</option>
+                            <option value="Student">Student</option>
+                            <option value="Developer">Developer</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label>Gender:</label><br>
+                        <input type="radio" id="Male" name="gender" value="Male">
+                        <label for="Male">Male</label>
+
+                        <input type="radio" id="Female" name="gender" value="Female">
+                        <label for="Female">Female</label>
+
+                        <input type="radio" id="Other" name="gender" value="Other">
+                        <label for="Other">Other</label>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend><b>Your Message &amp; Preferences</b></legend>
+
+                    <p>
+                        <label>Interests:</label><br>
+                        <input type="checkbox" id="Webdev" name="interest" value="Webdev">
+                        <label for="Webdev">Web Development</label>
+
+                        <input type="checkbox" id="Math" name="interest" value="Math">
+                        <label for="Math">Mathematics</label>
+
+                        <input type="checkbox" id="Content" name="interest" value="Content">
+                        <label for="Content">Content Creation</label>
+                    </p>
+
+                    <p>
+                        <label for="message">Message / Feedback:</label><br>
+                        <textarea id="message" name="message" rows="5" cols="45" placeholder="Type your message here..."
+                            required></textarea>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <p>
+                    <button type="submit">Submit Form</button>
+                    <button type="reset">Clear Form</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p><a href="index.html">&larr; Return to Main Portfolio Page</a></p>
+        <p>&copy; 2026 Rupesh Adhikari. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
